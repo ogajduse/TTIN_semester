@@ -7,6 +7,11 @@ public class Spustitelna {
         Paket p3 = new Paket(3);
         Paket p4 = new Paket(4);
 
+        p1.nasledujici = p2;
+        p2.nasledujici = p3;
+        p3.nasledujici = p4;
+        p4.nasledujici = p1;
+
     }
 }
 
