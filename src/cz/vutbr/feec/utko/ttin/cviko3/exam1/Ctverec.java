@@ -1,4 +1,4 @@
-package cz.vutbr.feec.cviko3;
+package cz.vutbr.feec.utko.ttin.cviko3;
 
 /**
  * Created by ogajduse on 2/21/17.
