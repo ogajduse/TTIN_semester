@@ -1,4 +1,4 @@
-package cz.vutbr.feec.cviko3;
+package cz.vutbr.feec.utko.ttin.cviko3.exam1;
 
 import java.util.ArrayList;
 import java.util.HashMap;

@@ -1,4 +1,4 @@
-package cz.vutbr.feec.cviko3.exam2;
+package cz.vutbr.feec.utko.ttin.cviko3.exam2;
 
 import java.util.HashMap;
 import java.util.HashSet;

@@ -1,6 +1,4 @@
-package cz.vutbr.feec.cviko3.exam2;
-
-import java.util.Arrays;
+package cz.vutbr.feec.utko.ttin.cviko3.exam2;
 
 /**
  * Created by ogajduse on 2/21/17.
@@ -61,6 +59,7 @@ public class HraciPole {
         for (int i = 0; i < 3; i++) {
             
         }
+        return false;
     }
 
     public int compareTo(HraciPole obj) {

@@ -1,4 +1,4 @@
-package cz.vutbr.feec.adresare;
+package cz.vutbr.feec.utko.ttin.cviko1.adresare;
 
 public class Spustitelna {
 

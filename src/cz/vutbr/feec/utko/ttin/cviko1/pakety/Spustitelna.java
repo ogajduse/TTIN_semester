@@ -1,4 +1,4 @@
-package cz.vutbr.feec.pakety;
+package cz.vutbr.feec.utko.ttin.cviko1.pakety;
 
 public class Spustitelna {
     public static void main(String[] args) {

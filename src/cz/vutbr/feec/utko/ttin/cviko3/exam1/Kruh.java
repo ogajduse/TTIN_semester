@@ -1,9 +1,9 @@
-package cz.vutbr.feec.utko.ttin.cviko3;
+package cz.vutbr.feec.utko.ttin.cviko3.exam1;
 
 /**
  * Created by ogajduse on 2/21/17.
  */
-public class Kruh extends cz.vutbr.feec.cviko3.Tvar {
+public class Kruh extends Tvar {
 
     private final int r;
 

@@ -1,4 +1,4 @@
-package cz.vutbr.feec.auto;
+package cz.vutbr.feec.utko.ttin.cviko1.auto;
 
 public class Mapa {
     public Auto auto1;
