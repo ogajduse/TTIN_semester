@@ -67,5 +67,15 @@ public class HraciPole {
         int h2 = obj.hashCode();
 
         return Integer.compare(h1, h2);
+    public boolean jeReseni() {
+        int[][] reseni = { { 1, 4, 7 }, { 2, 5, 8 }, { 3, 6, -1 } };
+        for (int x = 0; x < reseni.length; x++) {
+            for (int y = 0; y < reseni[0].length; y++) {
+                if (data[x][y] != reseni[x][y]) {
+                    return false;
+                }
+            }
+        }
+        return true;
     }
 }
