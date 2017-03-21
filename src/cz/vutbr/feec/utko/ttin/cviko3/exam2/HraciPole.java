@@ -49,12 +49,9 @@ public class HraciPole {
                 text += " " + pole[i][j];
             text += '\n';
         }
-
         return text;
     }
-    
-    
-    
+
     public boolean hashCode(HraciPole obj){
         for (int i = 0; i < 3; i++) {
             
@@ -63,15 +60,14 @@ public class HraciPole {
     }
 
     public int compareTo(HraciPole obj) {
-        int h1 = hashCode();
-        int h2 = obj.hashCode();
+        return Integer.compare(hashCode(), obj.hashCode());
+    }
 
-        return Integer.compare(h1, h2);
     public boolean jeReseni() {
         int[][] reseni = { { 1, 4, 7 }, { 2, 5, 8 }, { 3, 6, -1 } };
         for (int x = 0; x < reseni.length; x++) {
             for (int y = 0; y < reseni[0].length; y++) {
-                if (data[x][y] != reseni[x][y]) {
+                if (pole[x][y] != reseni[x][y]) {
                     return false;
                 }
             }
