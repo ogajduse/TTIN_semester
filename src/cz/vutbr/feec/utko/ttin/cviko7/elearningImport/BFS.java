@@ -1,8 +1,9 @@
-package cz.vutbr.feec.cisla;
+package cz.vutbr.feec.utko.ttin.cviko7.elearningImport;
 
 import java.util.HashSet;
 import java.util.LinkedList;
-import java.util.TreeSet;
+
+import cz.vutbr.feec.utko.ttin.cviko3.exam2.HraciPole;
 
 public class BFS {
 	public void vypisTahy(HraciPole zadani) {

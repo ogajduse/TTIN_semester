@@ -1,8 +1,9 @@
-package cz.vutbr.feec.utko.ttin.cviko7;
+package cz.vutbr.feec.utko.ttin.cviko7.elearningImport;
 
 import java.util.Random;
 
 import cz.vutbr.feec.utko.ttin.cviko3.exam2.HraciPole;
+import cz.vutbr.feec.utko.ttin.cviko7.elearningImport.BFS;
 
 public class Main {
 	public static void main(String[] args) {
