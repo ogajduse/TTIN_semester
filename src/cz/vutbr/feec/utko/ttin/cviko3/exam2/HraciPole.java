@@ -1,11 +1,12 @@
 package cz.vutbr.feec.utko.ttin.cviko3.exam2;
 
 import java.util.ArrayList;
+import org.
 
 /**
  * Created by ogajduse on 2/21/17.
  */
-public class HraciPole {
+public class HraciPole implements Comparable<HraciPole>{
     private int[][] pole = new int[][]{{4, 1, 2}, {3, 0, 5}, {6, 7, 8}};
     private int prazdneX;
     private int prazdneY;
@@ -87,15 +88,36 @@ public class HraciPole {
         return text;
     }
 
-    public boolean hashCode(HraciPole obj) {
-        for (int i = 0; i < 3; i++) {
-
+    @Override
+    public int hashCode() {
+        HashCodeBuilder h = new HashCodeBuilder();
+        for (int x = 0; x < pole.length; x++) {
+            for (int y = 0; y < pole[0].length; y++) {
+                h.append(pole[x][y]);
+            }
         }
-        return false;
+        return h.toHashCode();
     }
 
-    public int compareTo(HraciPole obj) {
-        return Integer.compare(hashCode(), obj.hashCode());
+    public int compareTo(HraciPole p) {
+        for (int ix = 0; ix < 3; ix++) {
+            for (int iy = 0; iy < 3; iy++) {
+                if (pole[ix][iy] == p.pole[ix][iy]) {
+                    continue;
+                } else if (pole[ix][iy] < p.pole[ix][iy]) {
+                    return -1;
+                } else {
+                    return 1;
+                }
+            }
+        }
+        return 0;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        HraciPole p = (HraciPole) obj;
+        return compareTo(p) == 0;
     }
 
     public boolean jeReseni() {
