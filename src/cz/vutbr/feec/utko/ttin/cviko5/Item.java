@@ -3,13 +3,13 @@ package cz.vutbr.feec.utko.ttin.cviko5;
 /**
  * Created by ogajduse on 3/4/17.
  */
-public class Node<T> {
-    T data;
-    private Node<T> left;
-    private Node<T> right;
-    private Node<T> parrent;
+public class Item<T extends Comparable<T>> {
+    private T data;
+    private Item<T> left;
+    private Item<T> right;
+    private Item<T> parrent;
 
-    public Node(T data, Node<T> parrent) {
+    public Item(T data, Item<T> parrent) {
         this.data = data;
         this.parrent = parrent;
     }
@@ -18,11 +18,11 @@ public class Node<T> {
         return data;
     }
 
-    public Node<T> getParrent() {
+    public Item<T> getParrent() {
         return parrent;
     }
 
-    public void setParrent(Node<T> parrent) {
+    public void setParrent(Item<T> parrent) {
         this.parrent = parrent;
     }
 
@@ -30,19 +30,19 @@ public class Node<T> {
         this.data = data;
     }
 
-    public Node<T> getLeft() {
+    public Item<T> getLeft() {
         return left;
     }
 
-    public void setLeft(Node<T> left) {
+    public void setLeft(Item<T> left) {
         this.left = left;
     }
 
-    public Node<T> getRight() {
+    public Item<T> getRight() {
         return right;
     }
 
-    public void setRight(Node<T> right) {
+    public void setRight(Item<T> right) {
         this.right = right;
     }
 
@@ -50,15 +50,16 @@ public class Node<T> {
         return this.left == null;
     }
 
-    public boolean isLeftEmpty(Node<T> node) {
-        return node.getLeft() == null;
+    public boolean isLeftEmpty(Item<T> item) {
+        return item.getLeft() == null;
     }
 
     public boolean isRightEmpty() {
         return this.right == null;
     }
 
-    public boolean isRightEmpty(Node<T> node) {
-        return node.getRight() == null;
+    public boolean isRightEmpty(Item<T> item) {
+        return item.getRight() == null;
     }
+
 }
