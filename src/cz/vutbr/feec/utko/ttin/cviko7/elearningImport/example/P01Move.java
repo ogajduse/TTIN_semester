@@ -1,6 +1,6 @@
-package cz.vutbr.feec.cisla;
+package cz.vutbr.feec.utko.ttin.cviko7.elearningImport.example;
 
-import cz.vutbr.feec.cisla.HraciPole;
+import cz.vutbr.feec.utko.ttin.cviko3.exam2.HraciPole;
 
 /**
  *	Priklad jak vytvorit jednu pametovou polozku a provest pohyb.
@@ -11,7 +11,7 @@ public class P01Move {
 		System.out.println(p);
 		
 		int NAHORU = 1;
-		p.pohni(NAHORU);
+		p.posun(NAHORU);
 		System.out.println(p);
 	}
 }

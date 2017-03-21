@@ -1,4 +1,4 @@
-package cz.vutbr.feec.cisla;
+package cz.vutbr.feec.utko.ttin.cviko7.elearningImport;
 
 import java.util.ArrayList;
 

@@ -1,8 +1,8 @@
-package cz.vutbr.feec.cisla;
+package cz.vutbr.feec.utko.ttin.cviko7.elearningImport.example;
 
 import java.util.Random;
 
-import cz.vutbr.feec.cisla.HraciPole;
+import cz.vutbr.feec.utko.ttin.cviko3.exam2.HraciPole;
 
 /**
  * Tento priklad demonstruje jak nahodne zamichat pocatecni reseni s pomoci
@@ -15,7 +15,7 @@ public class P02Randomize {
 		for (int i = 0; i < 100000; i++) {
 			// nahodne cislo 0 - 3
 			int nahodne = rnd.nextInt(4);
-			g.pohni(1 + nahodne);
+			g.posun(1 + nahodne);
 		}
 		System.out.println(g);
 	}

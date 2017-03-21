@@ -1,6 +1,8 @@
-package cz.vutbr.feec.cisla;
+package cz.vutbr.feec.utko.ttin.cviko7.elearningImport.example;
 
 import java.util.LinkedList;
+
+import cz.vutbr.feec.utko.ttin.cviko3.exam2.HraciPole;
 
 public class P07Fronta {
 	public static void main(String[] args) {

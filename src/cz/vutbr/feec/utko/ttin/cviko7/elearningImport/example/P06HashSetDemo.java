@@ -1,6 +1,8 @@
-package cz.vutbr.feec.cisla;
+package cz.vutbr.feec.utko.ttin.cviko7.elearningImport.example;
 
 import java.util.HashSet;
+
+import cz.vutbr.feec.utko.ttin.cviko3.exam2.HraciPole;
 
 public class P06HashSetDemo {
 	final static int NAHORU = 1;
@@ -15,7 +17,7 @@ public class P06HashSetDemo {
 		
 		// Pridej do mnoziny
 		HraciPole g2 = g1.klonujAPohni(NAHORU);
-		g2.pohni(DOLU);
+		g2.posun(DOLU);
 		set.add(g2);
 
 		System.out.println("Pocet prvku v mnozine je: "+set.size() + "\n"+ set);
