@@ -1,8 +1,8 @@
 package cz.vutbr.feec.utko.ttin.cviko7.elearningImport.example;
 
-import java.util.LinkedList;
-
 import cz.vutbr.feec.utko.ttin.cviko3.exam2.HraciPole;
+
+import java.util.LinkedList;
 
 public class P07Fronta {
 	public static void main(String[] args) {
@@ -13,7 +13,8 @@ public class P07Fronta {
 		fronta.addLast(h1);
 		fronta.addLast(h2);
 
-		// TODO: v cyklu postupne odstranit prvky ze zacatku a vypsat je.
-		
+        while (!fronta.isEmpty()){
+            System.out.println(fronta.remove());
+        }
 	}
 }

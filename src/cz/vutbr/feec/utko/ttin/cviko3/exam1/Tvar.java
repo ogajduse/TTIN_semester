@@ -3,7 +3,7 @@ package cz.vutbr.feec.utko.ttin.cviko3.exam1;
 /**
  * Created by ogajduse on 2/21/17.
  */
-public class Tvar {
+public abstract class Tvar {
 
     protected int x;
     protected int y;
@@ -13,5 +13,5 @@ public class Tvar {
 
     }
 
-    public void vykresli(){}
+    public abstract void vykresli();
 }

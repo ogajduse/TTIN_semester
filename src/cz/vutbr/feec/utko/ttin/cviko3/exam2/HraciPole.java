@@ -1,7 +1,8 @@
 package cz.vutbr.feec.utko.ttin.cviko3.exam2;
 
+import org.apache.commons.lang.builder.HashCodeBuilder;
+
 import java.util.ArrayList;
-import org.
 
 /**
  * Created by ogajduse on 2/21/17.
@@ -12,10 +13,10 @@ public class HraciPole implements Comparable<HraciPole>{
     private int prazdneY;
     private ArrayList<Integer> pohyby = new ArrayList<Integer>();
 
-    public static final int NAHORU = 0;
-    public static final int DOLU = 1;
-    public static final int DOLEVA = 2;
-    public static final int DOPRAVA = 3;
+    public static final int NAHORU = 1;
+    public static final int DOLU = 2;
+    public static final int DOLEVA = 3;
+    public static final int DOPRAVA = 4;
 
     public HraciPole klonujAPohni(int smer) {
         HraciPole nove = new HraciPole();
