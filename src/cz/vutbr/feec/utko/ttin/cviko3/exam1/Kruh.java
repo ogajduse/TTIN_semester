@@ -16,6 +16,6 @@ public class Kruh extends Tvar {
     @Override
     public void vykresli() {
         /*sout*/
-        System.out.println("vypisujeme kruh na souradnicich: " + x +" " + y + " s polomerem " + this.r);
+        System.out.println("vypisujeme kruh na souradnicich: " + x + " " + y + " s polomerem " + this.r);
     }
 }

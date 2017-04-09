@@ -18,16 +18,16 @@ public class Item<T extends Comparable<T>> {
         return data;
     }
 
+    public void setData(T data) {
+        this.data = data;
+    }
+
     public Item<T> getParrent() {
         return parrent;
     }
 
     public void setParrent(Item<T> parrent) {
         this.parrent = parrent;
-    }
-
-    public void setData(T data) {
-        this.data = data;
     }
 
     public Item<T> getLeft() {

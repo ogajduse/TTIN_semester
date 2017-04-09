@@ -1,8 +1,6 @@
 package cz.vutbr.feec.utko.ttin.cviko3.exam2;
 
-import java.util.HashMap;
 import java.util.HashSet;
-import java.util.Vector;
 
 /**
  * Created by ogajduse on 2/21/17.

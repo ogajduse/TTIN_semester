@@ -5,7 +5,7 @@ import java.util.Vector;
 /**
  * Created by ogajduse on 3/14/17.
  */
-public class Cesta implements Comparable<Cesta>{
+public class Cesta implements Comparable<Cesta> {
     private Graf g;
     private Uzel lastNode = null;
     private Vector<Uzel> uzly = new Vector<>();
@@ -19,8 +19,7 @@ public class Cesta implements Comparable<Cesta>{
         Uzel uzel = g.najdiUzel(s);
         if (lastNode == null) {
             cost = 0;
-        }
-        else{
+        } else {
             cost += lastNode.getCost(uzel);
         }
         lastNode = uzel;
@@ -37,15 +36,14 @@ public class Cesta implements Comparable<Cesta>{
     }
 
     public boolean isAtDestination(String destination) {
-        if (lastNode == null){
+        if (lastNode == null) {
             return false;
-        }
-        else{
+        } else {
             return destination.equals(lastNode.getHodnota());
         }
     }
 
-    public Cesta cloneAndAdd(String value){
+    public Cesta cloneAndAdd(String value) {
         Cesta copy = new Cesta(g);
         copy.lastNode = lastNode;
         copy.cost = cost;

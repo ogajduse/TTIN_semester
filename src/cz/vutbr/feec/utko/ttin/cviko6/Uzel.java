@@ -6,9 +6,9 @@ import java.util.LinkedList;
  * Created by ogajduse on 3/13/17.
  */
 public class Uzel {
+    public static final int NEKONECNO = 99999;
     private LinkedList<Hrana> sousede = new LinkedList<>();
     private String hodnota;
-    public static final int NEKONECNO = 99999;
 
     public Uzel(String hodnota) {
         this.hodnota = hodnota;
@@ -44,16 +44,16 @@ public class Uzel {
 
     public int getCost(Uzel u) {
         for (Hrana hrana : sousede) {
-            if (hrana.getLevy() == u || hrana.getPravy() == u){
+            if (hrana.getLevy() == u || hrana.getPravy() == u) {
                 return hrana.getCena();
             }
         }
         return NEKONECNO;
     }
 
-    public int getPocetSousedu(){
+    public int getPocetSousedu() {
         int counter = 0;
-        for (Hrana hrana : sousede){
+        for (Hrana hrana : sousede) {
             counter++;
         }
         return counter;

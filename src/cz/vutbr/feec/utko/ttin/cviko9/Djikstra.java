@@ -8,6 +8,7 @@ import cz.vutbr.feec.utko.ttin.cviko6.Graf;
  */
 public class Djikstra {
     Graf g;
+
     public Djikstra(Graf g) {
         this.g = g;
     }

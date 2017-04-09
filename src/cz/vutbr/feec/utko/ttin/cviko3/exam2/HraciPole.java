@@ -7,16 +7,15 @@ import java.util.ArrayList;
 /**
  * Created by ogajduse on 2/21/17.
  */
-public class HraciPole implements Comparable<HraciPole>{
-    private int[][] pole = new int[][]{{4, 1, 2}, {3, 0, 5}, {6, 7, 8}};
-    private int prazdneX;
-    private int prazdneY;
-    private ArrayList<Integer> pohyby = new ArrayList<Integer>();
-
+public class HraciPole implements Comparable<HraciPole> {
     public static final int NAHORU = 1;
     public static final int DOLU = 2;
     public static final int DOLEVA = 3;
     public static final int DOPRAVA = 4;
+    private int[][] pole = new int[][]{{4, 1, 2}, {3, 0, 5}, {6, 7, 8}};
+    private int prazdneX;
+    private int prazdneY;
+    private ArrayList<Integer> pohyby = new ArrayList<Integer>();
 
     public HraciPole klonujAPohni(int smer) {
         HraciPole nove = new HraciPole();

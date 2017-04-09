@@ -5,8 +5,8 @@ package cz.vutbr.feec.utko.ttin.cviko3.exam1;
  */
 public class Main {
     public static void main(String[] args) {
-        Kruh k1 = new Kruh(1,2,5);
-        Kruh k2 = new Kruh(1,2,5);
+        Kruh k1 = new Kruh(1, 2, 5);
+        Kruh k2 = new Kruh(1, 2, 5);
         Ctverec c1 = new Ctverec(5, 5, 9);
         Slozenina s = new Slozenina(10, 10);
 

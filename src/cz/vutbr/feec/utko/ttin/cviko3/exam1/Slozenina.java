@@ -1,12 +1,11 @@
 package cz.vutbr.feec.utko.ttin.cviko3.exam1;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 
 /**
  * Created by ogajduse on 2/21/17.
  */
-public class Slozenina extends Tvar{
+public class Slozenina extends Tvar {
 
     private ArrayList<Tvar> obsah = new ArrayList<>();
 
@@ -14,14 +13,15 @@ public class Slozenina extends Tvar{
         this.x = x;
         this.y = y;
     }
-    public void pridej(Tvar novyTvar){
+
+    public void pridej(Tvar novyTvar) {
         this.obsah.add(novyTvar);
     }
 
     @Override
-    public void vykresli(){
+    public void vykresli() {
         System.out.println("Slozenia obsahuje: \n");
-        for (Tvar tvar : obsah){
+        for (Tvar tvar : obsah) {
             tvar.vykresli();
         }
     }

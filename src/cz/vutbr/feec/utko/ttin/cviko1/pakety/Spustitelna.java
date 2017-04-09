@@ -3,7 +3,7 @@ package cz.vutbr.feec.utko.ttin.cviko1.pakety;
 public class Spustitelna {
     public static void main(String[] args) {
         Paket p1 = new Paket(1);
-        Paket p2 =new Paket(2);
+        Paket p2 = new Paket(2);
         Paket p3 = new Paket(3);
         Paket p4 = new Paket(4);
 

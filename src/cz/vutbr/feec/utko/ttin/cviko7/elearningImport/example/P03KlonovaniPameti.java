@@ -3,18 +3,18 @@ package cz.vutbr.feec.utko.ttin.cviko7.elearningImport.example;
 import cz.vutbr.feec.utko.ttin.cviko3.exam2.HraciPole;
 
 public class P03KlonovaniPameti {
-	public static void main(String[] args) {
-		HraciPole g = new HraciPole();
-		System.out.println("Original: \n" + g);
+    public static void main(String[] args) {
+        HraciPole g = new HraciPole();
+        System.out.println("Original: \n" + g);
 
-		int nahoru = 1;
+        int nahoru = 1;
 
-		HraciPole g3 = g.klonujAPohni(nahoru);
-		/*
+        HraciPole g3 = g.klonujAPohni(nahoru);
+        /*
 		 * // Vyzkousejte nahradit timto kodem predchozi radek a pozorujte efekt
 		 * HraciPole g3 = g;
 		 * g3.pohni(nahoru);
 		 */
-		System.out.println("Kopie s pohybem " + nahoru + " je: \n" + g3);
-	}
+        System.out.println("Kopie s pohybem " + nahoru + " je: \n" + g3);
+    }
 }

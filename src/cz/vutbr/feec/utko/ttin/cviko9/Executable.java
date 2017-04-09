@@ -27,7 +27,7 @@ public class Executable {
         c.pridejUzel("E");
         c.pridejUzel("B");
 
-        for (Hrana h : c.getLastNode().getSousede()){
+        for (Hrana h : c.getLastNode().getSousede()) {
             Cesta copy = c.cloneAndAdd(h.getSoused(c.getLastNode()).getHodnota());
             String value = copy.getLastNode().getHodnota();
             System.out.println("Copy A-E-B-" + value + "\tcost=" + copy.getCena());
