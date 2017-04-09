@@ -22,6 +22,7 @@ public class Executable {
         c.pridejUzel("5");
 
         c.getCena();
+        System.out.println(c.getCena());
     }
 
 }
