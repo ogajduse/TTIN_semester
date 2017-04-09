@@ -25,6 +25,7 @@ public class Uzel {
         return sousede;
     }
 
+    @Deprecated
     public void pridejSouseda(Uzel u, int cena) {
         for (Hrana hrana : sousede) {
             if (!(hrana.getLevy() == this) ? u == hrana.getLevy() : u == hrana.getPravy() ||
@@ -39,6 +40,23 @@ public class Uzel {
 
     public void pridejHranu(Hrana novaHrana){
         sousede.add(novaHrana);
+    }
+
+    public int getCost(Uzel u) {
+        for (Hrana hrana : sousede) {
+            if (hrana.getLevy() == u || hrana.getPravy() == u){
+                return hrana.getCena();
+            }
+        }
+        return NEKONECNO;
+    }
+
+    public int getPocetSousedu(){
+        int counter = 0;
+        for (Hrana hrana : sousede){
+            counter++;
+        }
+        return counter;
     }
 
 }

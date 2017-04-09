@@ -13,6 +13,15 @@ public class Hrana {
         this.pravy = pravy;
         this.cena = cena;
     }
+    public Uzel getSoused(Uzel asking){
+        if (levy != asking && pravy == asking){
+            return levy;
+        }
+        if (pravy != asking && levy == asking){
+            return pravy;
+        }
+        return null;
+    }
 
     public Uzel getLevy() {
         return levy;
