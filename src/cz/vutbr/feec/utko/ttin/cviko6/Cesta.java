@@ -1,22 +1,30 @@
 package cz.vutbr.feec.utko.ttin.cviko6;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
+import java.util.Vector;
 
 /**
  * Created by ogajduse on 3/14/17.
  */
-public class Cesta {
+public class Cesta implements Comparable<Cesta>{
     private Graf g;
-    private ArrayList<Uzel> uzly = new ArrayList<>();
-
+    private Uzel lastNode = null;
+    private Vector<Uzel> uzly = new Vector<>();
+    private int cost;
 
     public Cesta(Graf g) {
         this.g = g;
     }
 
     public void pridejUzel(String s) {
-        uzly.add(g.najdiUzel(s));
+        Uzel uzel = g.najdiUzel(s);
+        if (lastNode == null) {
+            cost = 0;
+        }
+        else{
+            cost += lastNode.getCost(uzel);
+        }
+        lastNode = uzel;
+        uzly.add(uzel);
     }
 
 
@@ -25,13 +33,17 @@ public class Cesta {
     }
 
     public int getCena() {
-        for (int i = 0; i < uzly.size() ; i++) {
-            LinkedList<Hrana> sousede = uzly.get(i).getSousede();
-            for (Hrana h : sousede){
+        return cost;
+    }
 
-            }
+    public boolean isAtDestination(String destination) {
+        if (lastNode == null){
+            return false;
         }
-        return 0;
+        else{
+            return destination.equals(lastNode.getHodnota());
+        }
+    }
 
     public Cesta cloneAndAdd(String value){
         Cesta copy = new Cesta(g);
@@ -39,6 +51,10 @@ public class Cesta {
         copy.cost = cost;
         copy.uzly.addAll(uzly);
 
+        copy.pridejUzel(value);
+        return copy;
+
+    }
 
     @Override
     public String toString() {

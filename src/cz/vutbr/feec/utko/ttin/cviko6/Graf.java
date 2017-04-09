@@ -1,8 +1,6 @@
 package cz.vutbr.feec.utko.ttin.cviko6;
 
 import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.Vector;
 
 /**
  * Created by ogajduse on 3/13/17.
@@ -14,7 +12,7 @@ public class Graf {
         Uzel srcUzel = uzly.get(src);
         Uzel dstUzel = uzly.get(dst);
 
-        if (!(srcUzel == null) && !(dstUzel == null) && srcUzel.getSousede().contains(dstUzel)){
+        if (!(srcUzel == null) && !(dstUzel == null) && srcUzel.getSousede().contains(dstUzel)) {
             System.out.println("takova cesta jiz existuje");
             return;
         }
@@ -27,10 +25,12 @@ public class Graf {
             uzly.put(dst, dstUzel);
         }
 
-        srcUzel.pridejHranu(new Hrana(srcUzel, dstUzel, cena));
-        dstUzel.pridejHranu(new Hrana(srcUzel, dstUzel, cena));
+        Hrana h = new Hrana(srcUzel, dstUzel, cena);
+        srcUzel.pridejHranu(h);
+        dstUzel.pridejHranu(h);
     }
-    public Uzel najdiUzel(String identifikator){
+
+    public Uzel najdiUzel(String identifikator) {
         return uzly.get(identifikator);
     }
 }

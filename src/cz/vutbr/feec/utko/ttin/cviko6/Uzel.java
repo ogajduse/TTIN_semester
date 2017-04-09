@@ -8,6 +8,7 @@ import java.util.LinkedList;
 public class Uzel {
     private LinkedList<Hrana> sousede = new LinkedList<>();
     private String hodnota;
+    public static final int NEKONECNO = 99999;
 
     public Uzel(String hodnota) {
         this.hodnota = hodnota;
@@ -34,11 +35,10 @@ public class Uzel {
                 return;
             }
             sousede.add(new Hrana(this, u, cena));
-
         }
     }
 
-    public void pridejHranu(Hrana novaHrana){
+    public void pridejHranu(Hrana novaHrana) {
         sousede.add(novaHrana);
     }
 
