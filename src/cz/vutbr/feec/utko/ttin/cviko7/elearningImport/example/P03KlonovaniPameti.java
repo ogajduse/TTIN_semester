@@ -11,7 +11,7 @@ public class P03KlonovaniPameti {
 
         HraciPole g3 = g.klonujAPohni(nahoru);
         /*
-		 * // Vyzkousejte nahradit timto kodem predchozi radek a pozorujte efekt
+         * // Vyzkousejte nahradit timto kodem predchozi radek a pozorujte efekt
 		 * HraciPole g3 = g;
 		 * g3.pohni(nahoru);
 		 */
