@@ -10,7 +10,7 @@ import cz.vutbr.feec.utko.ttin.cviko10.elearning.src.Model;
  */
 public class Priklad7 {
     public static void main(String[] args) {
-        ExampleSet es = ExampleSet.read("data/trainingset.txt");
+        ExampleSet es = ExampleSet.read("data/cviko10/trainingset.txt");
 
         // Nastavim data na spravnou hodnotu:
         DecisionTreeLearner l = new DecisionTreeLearner();

@@ -7,7 +7,7 @@ import cz.vutbr.feec.utko.ttin.cviko10.elearning.src.ExampleSet;
  */
 public class Priklad3 {
     public static void main(String[] args) {
-        ExampleSet es = ExampleSet.read("data/trainingset.txt");
+        ExampleSet es = ExampleSet.read("data/cviko10/trainingset.txt");
 
         for (int i = 0; i < es.size(); i++) {
             // vezme radek kodu
