@@ -1,5 +1,9 @@
 package cz.vutbr.feec.utko.ttin.cviko10.elearning.example;
 
+import cz.vutbr.feec.utko.ttin.cviko10.elearning.src.AccuracyEvaluator;
+import cz.vutbr.feec.utko.ttin.cviko10.elearning.src.DumpTreeModel;
+import cz.vutbr.feec.utko.ttin.cviko10.elearning.src.ExampleSet;
+
 /**
  * Tento priklad ukazuje, jak nacist a vypsat veskere hodnoty z nactene trenovaci sady
  */

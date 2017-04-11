@@ -1,5 +1,7 @@
 package cz.vutbr.feec.utko.ttin.cviko10.elearning.example;
 
+import cz.vutbr.feec.utko.ttin.cviko10.elearning.src.ExampleSet;
+
 /**
  * Ukazuje data
  */
