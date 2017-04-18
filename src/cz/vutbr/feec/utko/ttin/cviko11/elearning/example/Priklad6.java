@@ -1,4 +1,4 @@
-package cz.vutbr.feec.ga;
+package cz.vutbr.feec.utko.ttin.cviko11.elearning.example;
 
 import java.io.IOException;
 

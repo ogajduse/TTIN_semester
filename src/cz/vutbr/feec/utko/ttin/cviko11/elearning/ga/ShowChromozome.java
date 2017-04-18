@@ -1,13 +1,7 @@
-package cz.vutbr.feec.ga;
+package cz.vutbr.feec.utko.ttin.cviko11.elearning.ga;
 
-import java.awt.Color;
-import java.awt.Container;
-import java.awt.Dimension;
-import java.awt.Graphics;
-import java.awt.Polygon;
-
-import javax.swing.JFrame;
-import javax.swing.JPanel;
+import javax.swing.*;
+import java.awt.*;
 
 /**
  * Tato trida slouzi pouze pro vizualizaci vysledu - netreba ji rozmet.

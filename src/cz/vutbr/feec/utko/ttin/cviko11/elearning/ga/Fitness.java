@@ -1,4 +1,4 @@
-package cz.vutbr.feec.ga;
+package cz.vutbr.feec.utko.ttin.cviko11.elearning.ga;
 
 import java.awt.Color;
 import java.awt.Graphics2D;
