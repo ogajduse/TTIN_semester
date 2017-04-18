@@ -15,7 +15,7 @@ public class Priklad2 {
         ch1.mutateAll();
 
         // Porovnavaci trida vuci obrazku orloj.jpg
-        Fitness eval = new Fitness("image/orloj.jpg");
+        Fitness eval = new Fitness("data/cviko11/image/orloj.jpg");
 
         // poorvnej
         int error = eval.getFitness(ch1);

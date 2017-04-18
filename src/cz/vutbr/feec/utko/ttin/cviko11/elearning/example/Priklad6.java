@@ -24,7 +24,7 @@ public class Priklad6 {
         ch1Clone.crossOver(ch2Clone);
 
         // Ohodnoceni kvality jednotlivych reseni
-        Fitness eval = new Fitness("image/orloj.jpg");
+        Fitness eval = new Fitness("data/cviko11/image/orloj.jpg");
 
         System.out.println("Nejlepsi je chromozom s nejmensi "
                 + "chybou oproti predloze:");
