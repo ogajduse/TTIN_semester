@@ -11,5 +11,10 @@ public class Priklad2 {
 
         System.out.println("Radek 0 obsahuje nasedujici data:");
         System.out.println(es.get(0));
+
+        System.out.println("Cely soubor:");
+        for (int i = 0; i < es.size(); i++) {
+            System.out.println(es.get(i));
+        }
     }
 }

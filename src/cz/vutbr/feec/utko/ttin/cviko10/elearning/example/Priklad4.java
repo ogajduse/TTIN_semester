@@ -13,8 +13,12 @@ public class Priklad4 {
         // Nastavim data na spravnou hodnotu:
         es.get(0).setPrediction(1.0);
 
+        for (int i = 0; i < es.size(); i++) {
+            es.get(i).setPrediction(1.0);
+        }
+
         AccuracyEvaluator ae = new AccuracyEvaluator();
-        double accuracy = ae.evaluate(es);
+        double accuracy = ae.evaluate(es) * 100;
 
 
         System.out.println("Presnost je " + accuracy + " %");

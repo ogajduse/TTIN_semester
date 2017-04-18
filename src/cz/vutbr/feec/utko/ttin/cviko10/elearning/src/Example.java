@@ -40,4 +40,8 @@ public class Example {
     public void setPrediction(double value) {
         data[data.length - 1] = value;
     }
+
+    public double getAttribute(int index) {
+        return data[index];
+    }
 }

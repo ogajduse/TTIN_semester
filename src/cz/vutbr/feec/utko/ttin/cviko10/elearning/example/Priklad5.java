@@ -19,7 +19,7 @@ public class Priklad5 {
         double accuracy = ae.evaluate(es);
 
 
-        System.out.println("Presnost je " + accuracy + " %");
+        System.out.println("Presnost je " + accuracy * 100 + " %");
 
     }
 }
