@@ -1,5 +1,9 @@
 package cz.vutbr.feec.utko.ttin.cviko11.elearning.example;
 
+import cz.vutbr.feec.utko.ttin.cviko11.elearning.ga.Chromozome;
+import cz.vutbr.feec.utko.ttin.cviko11.elearning.ga.Fitness;
+import cz.vutbr.feec.utko.ttin.cviko11.elearning.ga.ShowChromozome;
+
 import java.io.IOException;
 
 /**
