@@ -40,20 +40,19 @@ public class LinearList {
         while (this.head.getBarva() == barva) {
             odstranZeZacatku();
         }
-        Uzel predtestovany = this.head;
         Uzel testovany = this.head;
         boolean retval = false;
-        while (testovany != null) {
-            if (testovany.getBarva() == barva) {
-                predtestovany.setNext(testovany.getNext());
-                testovany = predtestovany.getNext();
+        if (this.head.getBarva() == barva){
+            odstranZeZacatku();
+        }
+        while (testovany.getNext() != null) {
+            if (testovany.getNext().getBarva() == barva) {
+                testovany.setNext(testovany.getNext().getNext());
                 count--;
                 retval = true;
                 continue;
-            } else {
-                predtestovany = testovany;
-                testovany = testovany.getNext();
             }
+                testovany = testovany.getNext();
         }
         return retval;
     }
