@@ -17,6 +17,6 @@ public class Priklad1 {
         ch1.mutateAll();
 
         // zobraz
-        ShowChromozome.show(ch1, "Ch 1");
+        ShowChromozome.show(ch1.cloneChromozome(), "Ch 1");
     }
 }
