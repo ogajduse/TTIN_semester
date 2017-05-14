@@ -7,11 +7,11 @@ public class Item<T extends Comparable<T>> {
     private T data;
     private Item<T> left;
     private Item<T> right;
-    private Item<T> parrent;
+    private Item<T> parent;
 
-    public Item(T data, Item<T> parrent) {
+    public Item(T data, Item<T> parent) {
         this.data = data;
-        this.parrent = parrent;
+        this.parent = parent;
     }
 
     public T getData() {
@@ -22,12 +22,12 @@ public class Item<T extends Comparable<T>> {
         this.data = data;
     }
 
-    public Item<T> getParrent() {
-        return parrent;
+    public Item<T> getParent() {
+        return parent;
     }
 
-    public void setParrent(Item<T> parrent) {
-        this.parrent = parrent;
+    public void setParent(Item<T> parent) {
+        this.parent = parent;
     }
 
     public Item<T> getLeft() {
