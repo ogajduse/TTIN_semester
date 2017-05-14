@@ -5,33 +5,33 @@ import java.util.Vector;
 /**
  * Created by ogajduse on 3/14/17.
  */
-public class Cesta implements Comparable<Cesta> {
-    private Graf g;
-    private Uzel lastNode = null;
-    private Vector<Uzel> uzly = new Vector<>();
+public class Path implements Comparable<Path> {
+    private Graph g;
+    private Node lastNode = null;
+    private Vector<Node> nodes = new Vector<>();
     private int cost;
 
-    public Cesta(Graf g) {
+    public Path(Graph g) {
         this.g = g;
     }
 
-    public void pridejUzel(String s) {
-        Uzel uzel = g.najdiUzel(s);
+    public void addNode(String s) {
+        Node node = g.findNode(s);
         if (lastNode == null) {
             cost = 0;
         } else {
-            cost += lastNode.getCost(uzel);
+            cost += lastNode.getCost(node);
         }
-        lastNode = uzel;
-        uzly.add(uzel);
+        lastNode = node;
+        nodes.add(node);
     }
 
 
-    public Uzel getLastNode() {
+    public Node getLastNode() {
         return lastNode;
     }
 
-    public int getCena() {
+    public int getCost() {
         return cost;
     }
 
@@ -39,17 +39,17 @@ public class Cesta implements Comparable<Cesta> {
         if (lastNode == null) {
             return false;
         } else {
-            return destination.equals(lastNode.getHodnota());
+            return destination.equals(lastNode.getValue());
         }
     }
 
-    public Cesta cloneAndAdd(String value) {
-        Cesta copy = new Cesta(g);
+    public Path cloneAndAdd(String value) {
+        Path copy = new Path(g);
         copy.lastNode = lastNode;
         copy.cost = cost;
-        copy.uzly.addAll(uzly);
+        copy.nodes.addAll(nodes);
 
-        copy.pridejUzel(value);
+        copy.addNode(value);
         return copy;
 
     }
@@ -60,9 +60,9 @@ public class Cesta implements Comparable<Cesta> {
     }
 
     @Override
-    public int compareTo(Cesta cesta) {
+    public int compareTo(Path path) {
         Integer c1 = cost;
-        Integer c2 = cesta.getCena();
+        Integer c2 = path.getCost();
         return c1.compareTo(c2);
     }
 }
